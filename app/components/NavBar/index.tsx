@@ -25,7 +25,7 @@ const NavBar = () => {
     const [open, setOpen] = useState<boolean>(false);
 
     return (
-        <header className="w-full h-nav-bar absolute pt-4 bg-white flex items-center px-4 tablet:px-8 desktop:px-28">
+        <header className="w-full h-nav-bar fixed pt-4 bg-white flex items-center px-4 tablet:px-8 desktop:px-28 top-0 inset-x-0">
             <div className="flex items-center cursor-pointer">
                 <div className="h-8 w-8 relative">
                     <Image
