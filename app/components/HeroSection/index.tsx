@@ -20,7 +20,7 @@ const HeroSection = () => {
             <img
                 alt="hero"
                 src="/hero-image.png"
-                className="w-full desktop:w-[670px]"
+                className="max-w-[960px] w-full desktop:w-[670px]"
             />
         </section>
     )
