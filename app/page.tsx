@@ -8,6 +8,7 @@ import FeatureSection3 from "./components/FeatureSection3";
 import PriceSection from "./components/PriceSection";
 import FAQSection from "./components/FAQSection";
 import SubscribeSection from "./components/SubscribeSection";
+import ContactSection from "./components/ContactSection";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <PriceSection />
         <FAQSection />
         <SubscribeSection />
+        <ContactSection />
       </div>
     </main>
   );
