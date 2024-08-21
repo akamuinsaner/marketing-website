@@ -53,7 +53,7 @@ const FeatureSection = () => {
                                 src={feature.icon}
                                 className="w-12 h-12 mb-5"
                             />
-                            <h6 className="text-xl text-primary font-semibold mb-2">{feature.title}</h6>
+                            <h3 className="text-xl text-primary font-semibold mb-2">{feature.title}</h3>
                             <p className="text-base text-center text-secondary">{feature.desc}</p>
                         </li>
                     )

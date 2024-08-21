@@ -22,7 +22,7 @@ const FeatureSection2 = () => {
                             src="/featureSection/21.png"
                         />
                         <div className="py-2.5 flex flex-col gap-2">
-                            <h6 className="text-lg text-primary font-semibold">5K resolution support</h6>
+                            <h3 className="text-lg text-primary font-semibold">5K resolution support</h3>
                             <p className="text-base text-secondary">
                                 All images boast a minimum resolution of 5K, ensuring crisp, crystal-clear quality.
                             </p>
@@ -34,7 +34,7 @@ const FeatureSection2 = () => {
                             src="/featureSection/22.png"
                         />
                         <div className="py-2.5 flex flex-col gap-2">
-                            <h6 className="text-lg text-primary font-semibold">From water to glass</h6>
+                            <h3 className="text-lg text-primary font-semibold">From water to glass</h3>
                             <p className="text-base text-secondary">
                                 We offer a wide array of abstractions, ranging from water to glass, and encompassing various styles including 3D and vector.
                             </p>
@@ -46,7 +46,7 @@ const FeatureSection2 = () => {
                             src="/featureSection/23.png"
                         />
                         <div className="py-2.5 flex flex-col gap-2">
-                            <h6 className="text-lg text-primary font-semibold">Portrait or landscape</h6>
+                            <h3 className="text-lg text-primary font-semibold">Portrait or landscape</h3>
                             <p className="text-base text-secondary">
                                 Effortlessly adapt your images for any platform - whether it's a stunning wallpaper or captivating Instagram reels and stories.
                             </p>
@@ -54,8 +54,10 @@ const FeatureSection2 = () => {
                     </li>
                 </ul>
                 <img
-                    src="/featureSection/24.png"
+                    src="/featureSection/24.webp"
                     className="w-full rounded-lg desktop:w-[592px]"
+                    loading="lazy"
+                    alt=""
                 />
             </div>
         </section>

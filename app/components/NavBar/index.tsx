@@ -70,19 +70,20 @@ const NavBar = () => {
                     className=" outline-none py-[10px] px-4 bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-[#444CE7]/12"
                 >See pricing</a>
             </div>
-            <a
-                href="#"
-                role="button"
+            <button
+                type="button"
+                tabIndex={0}
                 className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
                 onClick={() => setOpen(true)}
                 aria-expanded={open}
                 aria-controls="nav-drawer"
+                aria-label="open navigation drawer"
             >
                 <img
                     src="/menu-fill.png"
                     className="h-5 w-5"
                 />
-            </a>
+            </button>
             <Drawer
                 open={open}
                 className="w-[375px] px-4 pt-8 pb-4 flex flex-col gap-6"
@@ -103,11 +104,13 @@ const NavBar = () => {
                         </div>
                         <span className="font-bold text-base text-primary">Abstractly</span>
                     </a>
-                    <a
-                        href="#"
+                    <button
+                        type="button"
+                        tabIndex={0}
                         className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
                         onClick={() => setOpen(false)}
                         role="button"
+                        aria-label="close navigation drawer"
                     >
                         <img
                             alt="close"
@@ -115,7 +118,7 @@ const NavBar = () => {
                             className="h-5 w-5"
 
                         />
-                    </a>
+                    </button>
                 </div>
                 <ul
                     className="flex flex-col gap-2 text-primary text-sm flex-1"
