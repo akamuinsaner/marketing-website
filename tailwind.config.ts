@@ -26,7 +26,8 @@ const config: Config = {
         "primary-hover": "#0a0a0a",
         "primary-invert": "#fff",
         "secondary": "#525252",
-        "brand": "#4338ca"
+        "brand": "#4338ca",
+        "tertiary": "#737373"
       },
       borderColor: {
         "primary": "#e5e5e5",

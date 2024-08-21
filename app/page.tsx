@@ -7,6 +7,7 @@ import FeatureSection2 from "./components/FeatureSestion2";
 import FeatureSection3 from "./components/FeatureSection3";
 import PriceSection from "./components/PriceSection";
 import FAQSection from "./components/FAQSection";
+import SubscribeSection from "./components/SubscribeSection";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <FeatureSection3 />
         <PriceSection />
         <FAQSection />
+        <SubscribeSection />
       </div>
     </main>
   );
