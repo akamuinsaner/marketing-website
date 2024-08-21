@@ -5,6 +5,7 @@ import LogoSection from "./components/LogoSection";
 import FeatureSection from "./components/FeatureSection";
 import FeatureSection2 from "./components/FeatureSestion2";
 import FeatureSection3 from "./components/FeatureSection3";
+import PriceSection from "./components/PriceSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <FeatureSection />
         <FeatureSection2 />
         <FeatureSection3 />
+        <PriceSection />
       </div>
     </main>
   );

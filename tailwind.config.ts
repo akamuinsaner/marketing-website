@@ -29,14 +29,16 @@ const config: Config = {
         "brand": "#4338ca"
       },
       borderColor: {
-        "primary": "#e5e5e5"
+        "primary": "#e5e5e5",
+        "brand-solid": "#4f46e5"
       },
       backgroundColor: {
         "primary": "#fff",
         "primary-inverted": "#0a0a0a",
         "primary-hover": "#fafafa",
         "brand-primary": "#4338ca",
-        "brand-primary-emphasize": "#3730a3"
+        "brand-primary-emphasize": "#3730a3",
+        "brand-subtle": "#eef2ff"
       }
     },
   },
