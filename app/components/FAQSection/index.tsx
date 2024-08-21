@@ -97,7 +97,7 @@ const FAQSection = () => {
                                 <button
                                     type="button"
                                     tabIndex={0}
-                                    className="outline-none w-6 h-6 shrink-0 cursor-pointer focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                                    className="outline-none w-6 h-6 shrink-0 cursor-pointer focus:ring-4 focus:ring-focus/[.12] rounded"
                                     onClick={() => toggleOpening(qa.id)}
                                     aria-expanded={isOpening}
                                     aria-controls={`${qa.id}`}
@@ -119,13 +119,13 @@ const FAQSection = () => {
                             Can’t find the answer you’re looking for?
                         </h3>
                         <p className="text-base text-secondary">
-                            Reach out to our <a className="text-brand">customer support</a> team.
+                            Reach out to our <a className="text-brand" href="#">customer support</a> team.
                         </p>
                     </div>
                     <a
                         role="button"
                         href="#"
-                        className="w-full tablet:w-auto py-3 px-5 rounded bg-brand-primary text-primary-invert text-center shadow text-base font-medium cursor-pointer hover:bg-brand-primary-emphasize outline-none focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-[#444CE7]/12"
+                        className="w-full tablet:w-auto py-3 px-5 rounded bg-brand-primary text-primary-invert text-center shadow text-base font-medium cursor-pointer hover:bg-brand-primary-emphasize outline-none focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-focus/[.12]"
                     >
                         Get in touch
                     </a>

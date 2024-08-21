@@ -49,40 +49,51 @@ const ContactSection = () => {
                                 <label
                                     htmlFor="name"
                                     className="text-sm font-medium text-secondary"
+                                    aria-label="name"
                                 >Name</label>
                                 <input
                                     id="name"
+                                    aria-labelledby="name"
                                     placeholder="Your name"
-                                    className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none"
+                                    className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none focus:border-[#444ce7] outline-none focus:ring-4 focus:ring-focus/[.12]"
                                 />
                             </div>
                             <div className="flex flex-col gap-3 flex-1">
                                 <label
                                     htmlFor="email"
+                                    aria-label="email"
                                     className="text-sm font-medium text-secondary"
                                 >Email</label>
                                 <input
                                     id="email"
+                                    aria-labelledby="email"
                                     placeholder="example@example.com"
-                                    className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none"
+                                    className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none focus:border-[#444ce7] outline-none focus:ring-4 focus:ring-focus/[.12]"
                                 />
                             </div>
                         </div>
                         <div className="flex flex-col gap-3">
                             <label
                                 htmlFor="message"
+                                aria-label="message"
                                 className="text-sm font-medium text-secondary"
                             >Message</label>
                             <textarea
                                 id="message"
+                                aria-labelledby="message"
                                 placeholder="Write your message..."
-                                className="w-full rounded px-[14px] py-3 h-[108px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none"
+                                className="w-full rounded px-[14px] py-3 h-[108px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none focus:border-[#444ce7] outline-none focus:ring-4 focus:ring-focus/[.12]"
                             ></textarea>
                         </div>
                     </div>
-                    <a className="w-full tablet:w-auto py-[10px] px-[16px] rounded bg-brand-primary text-primary-invert text-center shadow text-sm font-medium cursor-pointer hover:bg-brand-primary-emphasize">
+                    <button
+                        type="button"
+                        tabIndex={0}
+                        aria-label="submit"
+                        className="w-full tablet:w-auto py-[10px] px-[16px] rounded bg-brand-primary text-primary-invert text-center shadow text-sm font-medium cursor-pointer hover:bg-brand-primary-emphasize outline-none focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-focus/[.12]"
+                    >
                         Submit
-                    </a>
+                    </button>
                 </div>
 
             </div>

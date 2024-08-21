@@ -25,7 +25,7 @@ const SubscribeSection = () => {
                 <div className="flex flex-col tablet:flex-row tablet:items-start gap-4">
                     <div className="flex flex-col gap-3">
                         <input
-                            className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none"
+                            className="w-full rounded px-[14px] py-[10px] border border-solid border-primary bg-primary-hover text-sm placeholder:text-tertiary outline-none focus:border-[#444ce7] outline-none focus:ring-4 focus:ring-focus/[.12]"
                             placeholder="Enter your email"
                         />
                         <p
@@ -34,9 +34,14 @@ const SubscribeSection = () => {
                             We only send you the best! No spam.
                         </p>
                     </div>
-                    <a className="w-full tablet:w-auto py-[10px] px-[14px] rounded bg-brand-primary text-primary-invert text-center shadow text-sm font-medium cursor-pointer hover:bg-brand-primary-emphasize">
+                    <button
+                        type="button"
+                        tabIndex={0}
+                        className="w-full tablet:w-auto py-[10px] px-[14px] rounded bg-brand-primary text-primary-invert text-center shadow text-sm font-medium cursor-pointer hover:bg-brand-primary-emphasize outline-none focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-focus/[.12]"
+                        aria-label="subscribe"
+                    >
                         Subscribe
-                    </a>
+                    </button>
                 </div>
             </div>
             <img

@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const PriceSection = () => {
     const [annually, setAnnually] = useState<boolean>(false);
-    const activeStyle = "outline-none text-center w-[150px] h-[44px] leading-[44px] text-base font-medium text-primary border border-solid border-primary shadow bg-primary hover:bg-primary-hover rounded cursor-pointer focus:bg-primary-hover focus:ring-4 focus:ring-[#444CE7]/12";
+    const activeStyle = "outline-none text-center w-[150px] h-[44px] leading-[44px] text-base font-medium text-primary border border-solid border-primary shadow bg-primary hover:bg-primary-hover rounded cursor-pointer focus:bg-primary-hover focus:ring-4 focus:ring-focus/[.12]";
     const unActiveStyle = "outline-none text-center w-[150px] h-[44px] leading-[44px] text-base font-medium text-primary cursor-pointer rounded"
     return (
         <section className="px-3 py-12 flex flex-col gap-12 tablet:px-4 tablet:py-16 tablet:gap-16 desktop:px-24 desktop:py-24 desktop:gap-16">
@@ -73,7 +73,7 @@ const PriceSection = () => {
                         <button
                             type="button"
                             tabIndex={0}
-                            className="text-center rounded border border-solid border-primary shadow w-full py-3 text-base text-primary font-medium bg-primary hover:bg-primary-hover cursor-pointer tablet:mt-auto focus:bg-primary-hover focus:ring-4 focus:ring-[#444CE7]/12 outline-none"
+                            className="text-center rounded border border-solid border-primary shadow w-full py-3 text-base text-primary font-medium bg-primary hover:bg-primary-hover cursor-pointer tablet:mt-auto focus:bg-primary-hover focus:ring-4 focus:ring-focus/[.12] outline-none"
                         >
                             Buy now
                         </button>
@@ -122,7 +122,7 @@ const PriceSection = () => {
                         <button
                             type="button"
                             tabIndex={0}
-                            className="text-center rounded shadow w-full py-3 text-base text-primary-invert font-medium bg-brand-primary hover:bg-brand-primary-emphasize cursor-pointer tablet:mt-auto focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-[#444CE7]/12 outline-none"
+                            className="text-center rounded shadow w-full py-3 text-base text-primary-invert font-medium bg-brand-primary hover:bg-brand-primary-emphasize cursor-pointer tablet:mt-auto focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-focus/[.12] outline-none"
                         >
                             Buy now
                         </button>
@@ -173,7 +173,7 @@ const PriceSection = () => {
                         <button
                             type="button"
                             tabIndex={0}
-                            className="text-center rounded border border-solid border-primary shadow w-full py-3 text-base text-primary font-medium bg-primary hover:bg-primary-hover cursor-pointer tablet:mt-auto focus:bg-primary-hover focus:ring-4 focus:ring-[#444CE7]/12 outline-none"
+                            className="text-center rounded border border-solid border-primary shadow w-full py-3 text-base text-primary font-medium bg-primary hover:bg-primary-hover cursor-pointer tablet:mt-auto focus:bg-primary-hover focus:ring-4 focus:ring-focus/[.12] outline-none"
                         >
                             Buy now
                         </button>

@@ -40,6 +40,9 @@ const config: Config = {
         "brand-primary": "#4338ca",
         "brand-primary-emphasize": "#3730a3",
         "brand-subtle": "#eef2ff"
+      },
+      ringColor: {
+        focus: "#444ce7"
       }
     },
   },

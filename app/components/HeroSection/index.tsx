@@ -12,13 +12,13 @@ const HeroSection = () => {
                     <a
                         role="button"
                         href="#"
-                        className="w-[152px] tablet:w-[213px] desktop:w-[175px] h-[48px] tablet:h-[60px] leading-[48px] tablet:leading-[60px] desktop:leading-[60px] text-center bg-primary hover:bg-primary-hover border border-solid border-primary shadow text-primary text-base tablet:text-lg desktop:text-lg font-medium cursor-pointer rounded focus:bg-primary-hover focus:ring-4 focus:ring-[#444CE7]/12">
+                        className="w-[152px] tablet:w-[213px] desktop:w-[175px] h-[48px] tablet:h-[60px] leading-[48px] tablet:leading-[60px] desktop:leading-[60px] text-center bg-primary hover:bg-primary-hover border border-solid border-primary shadow text-primary text-base tablet:text-lg desktop:text-lg font-medium cursor-pointer rounded focus:bg-primary-hover focus:ring-4 focus:ring-focus/[.12]">
                        Learn more 
                     </a>
                     <a
                         role="button"
                         href="#"
-                        className="w-[152px] tablet:w-[213px] desktop:w-[175px] h-[48px] tablet:h-[60px] leading-[48px] tablet:leading-[60px] desktop:leading-[60px] text-center bg-brand-primary hover:bg-brand-primary-emphasize shadow text-primary-invert text-base tablet:text-lg desktop:text-lg font-medium cursor-pointer rounded focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-[#444CE7]/12">
+                        className="w-[152px] tablet:w-[213px] desktop:w-[175px] h-[48px] tablet:h-[60px] leading-[48px] tablet:leading-[60px] desktop:leading-[60px] text-center bg-brand-primary hover:bg-brand-primary-emphasize shadow text-primary-invert text-base tablet:text-lg desktop:text-lg font-medium cursor-pointer rounded focus:bg-brand-primary-emphasize focus:ring-4 focus:ring-focus/[.12]">
                         See pricing
                     </a>
                 </div>

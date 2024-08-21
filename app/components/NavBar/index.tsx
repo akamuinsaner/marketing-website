@@ -33,7 +33,7 @@ const NavBar = () => {
         <header className="w-full h-nav-bar fixed pt-4 bg-white flex items-center px-4 tablet:px-8 desktop:px-28 top-0 inset-x-0">
             <a
                 role="button"
-                className="flex items-center cursor-pointer outline-none focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                className="flex items-center cursor-pointer outline-none focus:ring-4 focus:ring-focus/[.12] rounded"
                 href="/"
             >
                 <img src="/logo.png" className="h-8 w-8 relative" />
@@ -50,7 +50,7 @@ const NavBar = () => {
                         >
                             <a
                                 href={nav.href}
-                                className="hover:text-primary focus:text-primary focus:ring-4 focus:ring-[#444CE7]/12 rounded outline-none"
+                                className="hover:text-primary focus:text-primary focus:ring-4 focus:ring-focus/[.12] rounded outline-none"
                             >
                                 {nav.name}
                             </a>
@@ -62,18 +62,18 @@ const NavBar = () => {
                 <a
                     href="#"
                     role="button"
-                    className=" outline-none py-[10px] px-4 bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-[#444CE7]/12"
+                    className=" outline-none py-[10px] px-4 bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-focus/[.12]"
                 >Learn more</a>
                 <a
                     href="#"
                     role="button"
-                    className=" outline-none py-[10px] px-4 bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-[#444CE7]/12"
+                    className=" outline-none py-[10px] px-4 bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-focus/[.12]"
                 >See pricing</a>
             </div>
             <button
                 type="button"
                 tabIndex={0}
-                className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-focus/[.12] rounded"
                 onClick={() => setOpen(true)}
                 aria-expanded={open}
                 aria-controls="nav-drawer"
@@ -91,7 +91,7 @@ const NavBar = () => {
             >
                 <div className="flex items-center">
                     <a
-                        className="outline-none flex items-center cursor-pointer focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                        className="outline-none flex items-center cursor-pointer focus:ring-4 focus:ring-focus/[.12] rounded"
                         href="/"
                         role="button"
                     >
@@ -107,7 +107,7 @@ const NavBar = () => {
                     <button
                         type="button"
                         tabIndex={0}
-                        className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                        className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-focus/[.12] rounded"
                         onClick={() => setOpen(false)}
                         role="button"
                         aria-label="close navigation drawer"
@@ -132,7 +132,7 @@ const NavBar = () => {
                             >
                                 <a
                                     href={nav.href}
-                                    className="outline-none block w-full h-9 leading-9 pl-3 focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                                    className="outline-none block w-full h-9 leading-9 pl-3 focus:ring-4 focus:ring-focus/[.12] rounded"
                                 >
                                     {nav.name}
                                 </a>
@@ -144,12 +144,12 @@ const NavBar = () => {
                     <a
                         href="#"
                         role="button"
-                        className="outline-none py-[10px] w-full bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded text-center focus:ring-4 focus:ring-[#444CE7]/12"
+                        className="outline-none py-[10px] w-full bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded text-center focus:ring-4 focus:ring-focus/[.12]"
                     >Learn more</a>
                     <a
                         href="#"
                         role="button"
-                        className="outline-none py-[10px] w-full bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium rounded text-center focus:ring-4 focus:ring-[#444CE7]/12"
+                        className="outline-none py-[10px] w-full bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium rounded text-center focus:ring-4 focus:ring-focus/[.12]"
                     >Try it out</a>
                 </div>
             </Drawer>
