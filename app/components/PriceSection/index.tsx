@@ -11,7 +11,7 @@ const PriceSection = () => {
                             Fit for all your needs
                         </h3>
                     </div>
-                    <p className="text-lg tablet:text-xl desktop:tablet:xl max-w-[896px] mx-auto text-secondary text-center">
+                    <p className="text-lg tablet:text-xl desktop:text-xl max-w-[896px] mx-auto text-secondary text-center">
                         Pick the plan that suits you today and step up as your demands grow - our flexible options have your journey mapped out.
                     </p>
                 </div>
