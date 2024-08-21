@@ -5,19 +5,24 @@ import { useState } from 'react';
 
 const Navs = [
     {
-        name: 'Home'
+        name: 'Home',
+        href: '/',
     },
     {
-        name: 'Features'
+        name: 'Features',
+        href: '/features'
     },
     {
-        name: 'Pricing'
+        name: 'Pricing',
+        href: '/pricing'
     },
     {
-        name: 'about us'
+        name: 'about us',
+        href: '/about',
     },
     {
-        name: 'Contact'
+        name: 'Contact',
+        href: '/contact'
     }
 ];
 
@@ -26,50 +31,69 @@ const NavBar = () => {
 
     return (
         <header className="w-full h-nav-bar fixed pt-4 bg-white flex items-center px-4 tablet:px-8 desktop:px-28 top-0 inset-x-0">
-            <div className="flex items-center cursor-pointer">
-                <div className="h-8 w-8 relative">
-                    <Image
-                        alt="logo"
-                        src="/logo.png"
-                        fill={true}
-                    />
-                </div>
+            <a
+                role="button"
+                className="flex items-center cursor-pointer outline-none focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                href="/"
+            >
+                <img src="/logo.png" className="h-8 w-8 relative" />
                 <span className="font-bold text-base text-primary">Abstractly</span>
-            </div>
-            <ul className="hidden desktop:flex p-0 m-0 ml-24 mr-auto items-center gap-8 text-secondary text-medium">
+            </a>
+            <ul
+                className="hidden desktop:flex p-0 m-0 ml-24 mr-auto items-center gap-8 text-secondary font-medium text-base"
+                role="navigation"
+            >
                 {Navs.map(nav => {
                     return (
                         <li
                             key={nav.name}
-                            className="cursor-pointer"
-                        >{nav.name}</li>
+                        >
+                            <a
+                                href={nav.href}
+                                className="hover:text-primary focus:text-primary focus:ring-4 focus:ring-[#444CE7]/12 rounded outline-none"
+                            >
+                                {nav.name}
+                            </a>
+                        </li>
                     )
                 })}
             </ul>
             <div className="hidden desktop:flex items-center gap-4">
                 <a
-                    className="py-[10px] px-4 bg-primary hover:bg-primary-hover border border-solid border-primary shadow text-primary text-base text-medium cursor-pointer rounded"
+                    href="#"
+                    role="button"
+                    className=" outline-none py-[10px] px-4 bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-[#444CE7]/12"
                 >Learn more</a>
                 <a
-                    className="py-[10px] px-4 bg-brand-primary hover:bg-brand-primary-emphasize shadow text-primary-invert text-base text-medium cursor-pointer rounded"
+                    href="#"
+                    role="button"
+                    className=" outline-none py-[10px] px-4 bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium cursor-pointer rounded focus:ring-4 focus:ring-[#444CE7]/12"
                 >See pricing</a>
             </div>
-            <div
-                className="h-5 w-5 relative ml-auto cursor-pointer desktop:hidden"
+            <a
+                href="#"
+                role="button"
+                className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
                 onClick={() => setOpen(true)}
+                aria-expanded={open}
+                aria-controls="nav-drawer"
             >
-                <Image
-                    alt="menu"
+                <img
                     src="/menu-fill.png"
-                    fill={true}
+                    className="h-5 w-5"
                 />
-            </div>
+            </a>
             <Drawer
                 open={open}
                 className="w-[375px] px-4 pt-8 pb-4 flex flex-col gap-6"
+                id="nav-drawer"
             >
                 <div className="flex items-center">
-                    <div className="flex items-center cursor-pointer">
+                    <a
+                        className="outline-none flex items-center cursor-pointer focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                        href="/"
+                        role="button"
+                    >
                         <div className="h-8 w-8 relative">
                             <Image
                                 alt="logo"
@@ -78,35 +102,51 @@ const NavBar = () => {
                             />
                         </div>
                         <span className="font-bold text-base text-primary">Abstractly</span>
-                    </div>
-                    <div
-                        className="h-5 w-5 relative ml-auto cursor-pointer desktop:hidden"
+                    </a>
+                    <a
+                        href="#"
+                        className="outline-none relative ml-auto cursor-pointer desktop:hidden focus:ring-4 focus:ring-[#444CE7]/12 rounded"
                         onClick={() => setOpen(false)}
+                        role="button"
                     >
-                        <Image
+                        <img
                             alt="close"
                             src="/close.png"
-                            fill={true}
+                            className="h-5 w-5"
 
                         />
-                    </div>
+                    </a>
                 </div>
-                <ul className="flex flex-col gap-2 text-primary text-sm flex-1">
+                <ul
+                    className="flex flex-col gap-2 text-primary text-sm flex-1"
+                    role="navigation"
+                >
                     {Navs.map(nav => {
                         return (
                             <li
                                 key={nav.name}
-                                className="cursor-pointer h-9 leading-9 pl-3"
-                            >{nav.name}</li>
+                                className=""
+                            >
+                                <a
+                                    href={nav.href}
+                                    className="outline-none block w-full h-9 leading-9 pl-3 focus:ring-4 focus:ring-[#444CE7]/12 rounded"
+                                >
+                                    {nav.name}
+                                </a>
+                            </li>
                         )
                     })}
                 </ul>
                 <div className="flex flex-col gap-4">
                     <a
-                        className="py-[10px] w-full bg-primary hover:bg-primary-hover border border-solid border-primary shadow text-primary text-base text-medium cursor-pointer rounded text-center"
+                        href="#"
+                        role="button"
+                        className="outline-none py-[10px] w-full bg-primary hover:bg-primary-hover focus:bg-primary-hover border border-solid border-primary shadow text-primary text-base font-medium cursor-pointer rounded text-center focus:ring-4 focus:ring-[#444CE7]/12"
                     >Learn more</a>
                     <a
-                        className="py-[10px] w-full bg-brand-primary hover:bg-brand-primary-emphasize shadow text-primary-invert text-base text-medium cursor-pointer rounded text-center"
+                        href="#"
+                        role="button"
+                        className="outline-none py-[10px] w-full bg-brand-primary hover:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize focus:bg-brand-primary-emphasize shadow text-primary-invert text-base font-medium rounded text-center focus:ring-4 focus:ring-[#444CE7]/12"
                     >Try it out</a>
                 </div>
             </Drawer>

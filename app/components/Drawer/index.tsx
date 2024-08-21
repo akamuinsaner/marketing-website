@@ -6,12 +6,14 @@ import { styles } from './styles';
 import { twMerge } from 'tailwind-merge';
 
 export type TDrawer = {
+    id?: string;
     open: boolean;
     children?: ReactNode;
     className?: string;
 }
 
 const Drawer = ({
+    id,
     open,
     children,
     className
@@ -48,8 +50,11 @@ const Drawer = ({
     if (!wrapper) return null;
 
     return createPortal(
-        <div className={styles.mask}>
+        <div
+            className={styles.mask}
+        >
             <div
+                id={id}
                 className={finalClassName}
                 onTransitionEnd={onTransitionEnd}
             >
