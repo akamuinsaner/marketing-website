@@ -15,19 +15,31 @@ const ContactSection = () => {
                 </div>
                 <ul className='flex flex-col gap-6'>
                     <li className='flex items-center gap-3'>
-                        <img className='w-12 h-12' src='/address.png' />
+                        <img
+                            className='w-12 h-12'
+                            src='/address.png'
+                            alt='address'
+                        />
                         <p className='text-base text-secondary font-medium'>
                             123 Maple Street, Springfield, IL, USA
                         </p>
                     </li>
                     <li className='flex items-center gap-3'>
-                        <img className='w-12 h-12' src='/phone.png' />
+                        <img
+                            className='w-12 h-12'
+                            src='/phone.png'
+                            alt='phone'
+                        />
                         <p className='text-base text-secondary font-medium'>
                             +1 (650) 555-0198
                         </p>
                     </li>
                     <li className='flex items-center gap-3'>
-                        <img className='w-12 h-12' src='/email.png' />
+                        <img
+                            className='w-12 h-12'
+                            src='/email.png'
+                            alt='email'
+                        />
                         <p className='text-base text-secondary font-medium'>
                             hello@abstractly.com
                         </p>
